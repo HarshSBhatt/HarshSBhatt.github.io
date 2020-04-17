@@ -1,0 +1,144 @@
+//! Section - 2 About
+
+@import './variable.scss';
+
+.about-wrapper {
+	padding: 4rem;
+	.about-row {
+		.section-title {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 30px;
+			h1 {
+				font-size: 2.5rem;
+				font-weight: 700;
+				text-transform: uppercase;
+				position: relative;
+				margin: 10px 0;
+				&::before {
+					content: '';
+					position: absolute;
+					left: 0;
+					right: calc(100% - 150px);
+					bottom: 0;
+					height: 2px;
+					background-color: $warning;
+				}
+			}
+			p {
+				font-size: 14px;
+				font-weight: 400;
+				color: $gray;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+			}
+		}
+	}
+	.info-wrapper {
+		div {
+            display: flex;
+            margin: 15px 0;
+			.image {
+				max-width: 33.33%;
+				// width: 33.33%;
+				img {
+					width: 100%;
+					display: block;
+				}
+			}
+			.text {
+				display: flex;
+				flex-direction: column;
+				max-width: 66.67%;
+				padding-left: 30px;
+				h4 {
+					font-size: 25px;
+					font-weight: 600;
+					margin-bottom: 5px;
+					letter-spacing: 1.5px;
+				}
+
+				h6 {
+					font-size: 16px;
+					font-weight: 500;
+					margin-bottom: 5px;
+					letter-spacing: 1.5px;
+					strong {
+						color: $warning;
+						background-color: $warning-light;
+						padding: 5px;
+						border-radius: 8px;
+					}
+				}
+				p {
+					font-size: 15px;
+					font-weight: 400;
+					line-height: 24px;
+					margin-top: 5px;
+					color: $gray;
+				}
+				.detail_info {
+					display: flex;
+					flex-wrap: wrap;
+					padding: 20px 0;
+					// justify-content: space-between;
+					.list {
+						width: 48%;
+						margin: 10px 1%;
+						display: flex;
+						flex-direction: column;
+						border-bottom: 1px solid $gray-light;
+						label {
+							font-weight: 600;
+						}
+						p {
+							margin: 0 0 15px;
+						}
+					}
+					.social-links {
+						a {
+							div {
+								border-radius: 10px;
+								padding: 5px;
+								margin: 10px 5px;
+                                display: flex;
+                                &:hover{
+                                    opacity: 0.5;
+                                    transition: 0.5s ease-in-out;
+                                }
+							}
+							.fb {
+								color: $white;
+								background-color: #3b5998;
+								svg {
+									fill: $white;
+								}
+							}
+							.tt {
+								color: $white;
+								background-color: #08a0e9;
+								svg {
+									fill: $white;
+								}
+							}
+							.ig {
+								color: $white;
+								background-image: linear-gradient(-60deg, #f58529, #feda77, #dd2a7b, #8134af, #515bd4);
+							}
+							.lin {
+								color: $white;
+								background-color: #0e76a8;
+								svg {
+									fill: $white;
+								}
+							}
+						}
+					}
+				}
+			}
+        }
+        .info1{
+            flex-direction: row-reverse;
+        }
+	}
+}

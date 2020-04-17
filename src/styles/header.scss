@@ -1,0 +1,61 @@
+//! Header
+
+@import './variable.scss';
+
+header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	border-bottom: 1px solid $grey-header;
+	z-index: 999;
+	.navbar-container {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 5rem;
+		.company-name a {
+			font-size: 35px;
+			line-height: 75px;
+			letter-spacing: 5px;
+			color: $white;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-weight: bolder;
+		}
+		.navbar {
+			//* For future purpose
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				li {
+					display: inline-block;
+					margin-left: 20px;
+					a {
+						cursor: pointer;
+						font-size: 15px;
+						text-decoration: none;
+						line-height: 75px;
+						color: $white;
+						font-weight: bolder;
+						display: block;
+						position: relative;
+						// &.active::before {
+						// 	content: '';
+						// 	height: 3px;
+						// 	background-color: $white;
+						// 	width: 100%;
+						// 	position: absolute;
+						// 	left: 0;
+						// 	bottom: -1px;
+						// }
+					}
+				}
+			}
+		}
+	}
+}
+.active {
+    border-bottom: 3px solid $white;
+}

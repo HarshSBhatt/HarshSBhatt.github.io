@@ -1,22 +1,33 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from "react-scroll";
 
 function Navbar() {
+    const menu = ['Home', 'About', 'Services', 'Portfolio', 'Contact']
     return (
         <header data-aos='fade-down'>
             <div className='navbar-container'>
                 <div className='company-name'>
-                    <Link to='/'>
+                    <a href='/'>
                         Harsh
-                    </Link>
+                    </a>
                 </div>
                 <div className='navbar'>
                     <ul>
-                        <li><a className='active' href='/'>Home</a></li>
-                        <li><a href='/'>About</a></li>
-                        <li><a href='/'>Services</a></li>
-                        <li><a href='/'>Portfolio</a></li>
-                        <li><a href='/'>Contact</a></li>
+                        {
+                            menu.map((link, index) => (
+                                <li key={index}>
+                                    <Link
+                                        activeClass="active"
+                                        to={`section${index + 1}`}
+                                        spy={true}
+                                        smooth={true}
+                                        duration={700}
+                                    >
+                                        {menu[index]}
+                                    </Link>
+                                </li>
+                            ))
+                        }
                     </ul>
                 </div>
             </div>

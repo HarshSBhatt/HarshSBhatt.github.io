@@ -1,0 +1,42 @@
+//! Section - 1 Home
+
+@import './variable.scss';
+
+.intro-wrapper {
+	background-image: url('../images/home-background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.intro-row {
+		margin: 0 5rem;
+		min-height: 100vh;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		.intro-content {
+			border-left: 5px solid $white;
+			padding-left: 30px;
+			width: 75%;
+			h6,
+			h1,
+			h3 {
+				color: $white;
+				line-height: 1.2;
+				margin: 10px 0;
+				letter-spacing: 5px;
+			}
+			h6 {
+				font-size: 25px;
+				font-weight: 500;
+			}
+			h1 {
+				font-size: 90px;
+				font-weight: 700;
+			}
+			h3 {
+				font-size: 35px;
+				font-weight: 600;
+			}
+		}
+	}
+}
