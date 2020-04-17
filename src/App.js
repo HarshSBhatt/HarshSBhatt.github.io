@@ -6,12 +6,11 @@ import 'aos/dist/aos.css';
 import Navbar from './components/navbar';
 import Loading from './components/loading';
 import About from './components/about';
-import Services from './components/services';
-import Portfolio from './components/portfolio';
-import Contact from './components/contact';
+// import Services from './components/services';
+// import Portfolio from './components/portfolio';
+// import Contact from './components/contact';
 import { ArrowUp } from 'react-feather';
 import { animateScroll as scroll } from "react-scroll";
-import { SizeMe } from 'react-sizeme'
 
 function App() {
   useEffect(() => {
