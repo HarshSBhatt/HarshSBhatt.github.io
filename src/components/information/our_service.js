@@ -10,7 +10,7 @@ export const our_services = [
     {
         icon: <Cloud />,
         title: 'Cloud Computing',
-        desc: 'Nowadays Cloud is become more common and handy. Our team is here to provide all the necessary solution related to cloud. Get in touch with us!'
+        desc: 'Nowadays Cloud has become more common and handy. Our team is here to provide all the necessary solution related to cloud. Get in touch with us!'
     },
     {
         icon: <Monitor />,
