@@ -1,0 +1,109 @@
+//! Section - 3 Services
+
+@import './variable.scss';
+
+.services-wrapper {
+	padding: 5rem;
+	background: #f5f8fd;
+	.services-row {
+		.section-title {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 30px;
+			h1 {
+				font-size: 2.5rem;
+				font-weight: 700;
+				text-transform: uppercase;
+				position: relative;
+				margin: 10px 0;
+			}
+			span {
+				background: $warning;
+				width: 200px;
+				height: 2px;
+			}
+		}
+		.our-service-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			.box {
+				cursor: pointer;
+				display: flex;
+				padding: 50px 20px;
+				margin: 20px 10px;
+				background-color: $white;
+				flex-direction: column;
+				align-items: center;
+				width: 30%;
+				border: 1px solid #eeeeee;
+				border-radius: 5px;
+				position: relative;
+				transition: 0.5s ease-in-out;
+				&:hover {
+					transform: scale(1.05);
+					-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+					-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				}
+				&:hover::before {
+					width: 100%;
+				}
+				&::before {
+					content: '';
+					height: 2px;
+					background: $warning;
+					position: absolute;
+					bottom: 0;
+					width: 50px;
+					left: 0;
+					right: 0;
+					margin: auto;
+					transition: 0.5s ease-in-out;
+				}
+				.icon {
+					display: flex;
+					background: $warning;
+					color: $white;
+					border-radius: 50%;
+					margin: 0 auto 20px;
+					padding: 20px;
+				}
+				h5 {
+					font-size: 16px;
+					font-weight: 600;
+					text-align: center;
+				}
+				p {
+					text-align: center;
+					font-size: 15px;
+					font-weight: 400;
+					margin: 10px 0;
+					color: $gray;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.services-wrapper {
+		.services-row {
+			.section-title {
+				margin-bottom: 30px;
+				h1 {
+					font-size: 30px;
+				}
+			}
+			.our-service-wrapper {
+				.box {
+					width: 100%;
+					-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+					-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				}
+			}
+		}
+	}
+}

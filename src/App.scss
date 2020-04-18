@@ -1,7 +1,12 @@
+@import "~bootstrap/scss/bootstrap";
 @import './styles/loading.scss';
 @import './styles/header.scss';
 @import './styles/intro.scss';
 @import './styles/about.scss';
+@import './styles/services.scss';
+@import './styles/getintouch.scss';
+@import './styles/portfolio.scss';
+@import './styles/footer.scss';
 
 section {
 	min-height: 100vh;
@@ -9,14 +14,36 @@ section {
 }
 .scrollToTop{
 		position: fixed;
-		bottom: 70px;
-		right: 40px;
+		bottom: 2%;
+		right: 2%;
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
-		background-color: #000;
-		color: #fff;
+		background-color: $warning-light;
+		color: $warning;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		cursor: pointer;
+}
+.nav-tabs{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+	.nav-item{
+		font-family: 'Poppins', sans-serif !important;
+		color: $black !important;
+		font-weight: 600 !important;
+	}
+	.active{
+		color: $warning !important;
+	}
+}
+.tab-content{
+	margin: 50px 0 !important;
+}
+@media (max-width: 768px) {
+	section{
+	padding: 3rem 1rem !important;
+	}
 }

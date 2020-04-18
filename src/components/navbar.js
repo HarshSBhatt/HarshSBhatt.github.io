@@ -1,33 +1,43 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from "react-scroll";
+import { Menu } from 'react-feather'
 
 function Navbar() {
-    const menu = ['Home', 'About', 'Services', 'Portfolio', 'Contact']
+    const [cls, setCls] = useState('');
+    const [open, setOpen] = useState(false)
+    useEffect(() => {
+        window.addEventListener('scroll', listenScrollEvent)
+    }, [])
+    const listenScrollEvent = () => {
+        if (window.innerWidth >= 800) {
+            if (window.scrollY > 100) {
+                setCls('fixed')
+            } else {
+                setCls('')
+            }
+        }
+    }
+    const handleClick = () => {
+        setOpen(!open)
+    }
     return (
-        <header data-aos='fade-down'>
-            <div className='navbar-container'>
+
+        <header className={cls} data-aos='fade-down'>
+            <div className='nav-container'>
                 <div className='company-name'>
                     <a href='/'>
-                        Harsh
+                        The Solvers
                     </a>
                 </div>
-                <div className='navbar'>
+                <div onClick={handleClick} className='ham-burger'>
+                    <Menu />
+                </div>
+                <div className={open ? 'navbar show' : 'navbar'}>
                     <ul>
-                        {
-                            menu.map((link, index) => (
-                                <li key={index}>
-                                    <Link
-                                        activeClass="active"
-                                        to={`section${index + 1}`}
-                                        spy={true}
-                                        smooth={true}
-                                        duration={700}
-                                    >
-                                        {menu[index]}
-                                    </Link>
-                                </li>
-                            ))
-                        }
+                        <li><Link to='home' onClick={handleClick} spy={true} activeClass='active'>Home</Link></li>
+                        <li><Link to='about' onClick={handleClick} spy={true} activeClass='active'>About</Link></li>
+                        <li><Link to='services' onClick={handleClick} spy={true} activeClass='active'>Services</Link></li>
+                        <li><Link to='portfolio' onClick={handleClick} spy={true} activeClass='active'>Portfolio</Link></li>
                     </ul>
                 </div>
             </div>

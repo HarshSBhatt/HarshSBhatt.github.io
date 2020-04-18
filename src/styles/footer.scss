@@ -1,0 +1,65 @@
+//! Footer
+
+@import './variable.scss';
+footer {
+	padding: 5rem;
+	background-color: #0c0c17;
+	.footer-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.logo {
+			font-size: 45px;
+			color: $white;
+			font-weight: 900;
+			letter-spacing: 5px;
+			text-align: center;
+		}
+		.social-links {
+			display: flex;
+			a {
+				div {
+					border-radius: 10px;
+					padding: 5px;
+					margin: 10px 5px;
+					// display: flex;
+					color: #999999;
+					transition: 0.5s ease-in-out;
+					&:hover {
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}
+.copyright {
+	background-color: #0c0c17;
+	border-top: 1px solid #1d1d27;
+	padding: 20px;
+	p {
+		color: #838383;
+		text-align: center;
+		font-weight: 400;
+		font-size: 15px;
+		margin: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	footer {
+		padding: 2rem;
+		.footer-wrapper {
+			.logo {
+				text-transform: uppercase;
+				font-size: 25px;
+			}
+		}
+	}
+	.copyright {
+		p {
+			font-size: 12px;
+		}
+	}
+}

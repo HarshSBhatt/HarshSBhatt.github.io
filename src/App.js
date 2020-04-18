@@ -4,13 +4,13 @@ import Intro from './components/intro';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Navbar from './components/navbar';
-import Loading from './components/loading';
 import About from './components/about';
-// import Services from './components/services';
-// import Portfolio from './components/portfolio';
-// import Contact from './components/contact';
+import Services from './components/services';
+import Portfolio from './components/portfolio';
 import { ArrowUp } from 'react-feather';
-import { animateScroll as scroll } from "react-scroll";
+import GetInTouch from './components/getInTouch';
+import Footer from './components/footer';
+import Loading from './components/loading';
 
 function App() {
   useEffect(() => {
@@ -27,8 +27,9 @@ function App() {
   }, []);
 
   const scrollToTop = () => {
-    scroll.scrollToTop();
+    window.scroll(0, 0)
   };
+
   if (loading) return <Loading />;
 
   return (
@@ -36,9 +37,10 @@ function App() {
       <Navbar />
       <Intro />
       <About />
-      {/* <Services />
+      <Services />
+      <GetInTouch />
       <Portfolio />
-      <Contact /> */}
+      <Footer />
       <div className='scrollToTop' onClick={scrollToTop}><ArrowUp /></div>
     </React.Fragment>
   )

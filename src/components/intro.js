@@ -2,12 +2,12 @@ import React from 'react'
 
 function Intro() {
     return (
-        <section id='section1' className='intro-wrapper'>
+        <section id='home' className='intro-wrapper'>
             <div data-aos='fade-right' className='intro-row'>
                 <div className='intro-content'>
-                    <h6>Hello, My name is</h6>
-                    <h1>Harsh Bhatt</h1>
-                    <h3>Web Developer</h3>
+                    <h6>Hey there!, We are</h6>
+                    <h1>The Solvers</h1>
+                    <h3>Group of Freelancers</h3>
                 </div>
             </div>
         </section>

@@ -4,6 +4,7 @@ export const infos = [
     {
         id: 1,
         src: '/images/harsh.jpg',
+        download: '/resume/Harsh.pdf',
         name: 'Harsh Bhatt',
         interest: 'Data Science, UI/UX Designing, Web Development, Python Programming',
         description: "Hey! I'm a Computer Engineer and Freelancer. I have good knowledge of Data Science, Web Development, Web Designing and many other fields.",
@@ -53,86 +54,90 @@ export const infos = [
     },
     {
         id: 2,
-        src: '/images/harsh.jpg',
-        name: 'Harsh Bhatt',
-        interest: 'Data Science, UI/UX Designing, Web Development, Python Programming',
-        description: "Hey! I'm a Computer Engineer and Freelancer. I have good knowledge of Data Science, Web Development, Web Designing and many other fields.",
+        src: '/images/arbaz.png',
+        download: '/resume/Arbaz.pdf',
+        name: 'Arbaz Khan',
+        interest: 'Data Science, AI, IoT, Cloud Computing, Web Development, Algorithms and DS',
+        description: "I'm a Computer Science enthusiast keen towards learn and utillizing new cutting edge technologies. Experienced in the various field of Data Science, IoT, Cloud Computing, Web Development, efficient algorithms designing.",
         //* pd -> personal data
         pd: [
             {
-                Birthday: '21th August, 1998',
+                Birthday: '3rd Jun, 1999',
             },
             {
-                Email: 'harshb669@gmail.com'
+                Email: 'pathanarbazkha423@gmail.com'
             },
             {
-                Age: '22 Years'
+                Age: '20 Years'
             },
             {
-                Phone: '+91 7016888790'
+                Phone: '+91 7990833548'
             },
             {
                 Country: 'India',
             },
             {
-                Address: '7, Subhash Nagar, Surat'
+                Address: '138, Soyeb Nagar - A, Unn, Surat'
             }
         ],
         social_handle: [
             {
                 name: 'fb',
                 icon: <Facebook />,
-                link: 'https://www.facebook.com/harsh.bhatt.39395'
+                link: 'https://www.facebook.com/profile.php?id=100008099863693'
             },
             {
                 name: 'tt',
                 icon: <Twitter />,
-                link: 'https://twitter.com/harsh_bhatt03'
+                link: '#'
             },
             {
                 name: 'ig',
                 icon: <Instagram />,
-                link: 'https://www.instagram.com/harshbhatt2108/'
+                link: 'https://www.instagram.com/007abzkn/'
+
+
             },
             {
                 name: 'lin',
                 icon: <Linkedin />,
-                link: 'https://www.linkedin.com/in/harsh-bhatt-a2771b161/'
+                link: 'https://www.linkedin.com/in/arbazkhan-pathan-194514179/'
             },
         ]
     },
     {
         id: 3,
-        src: '/images/harsh.jpg',
-        name: 'Harsh Bhatt',
-        interest: 'Data Science, UI/UX Designing, Web Development, Python Programming',
-        description: "Hey! I'm a Computer Engineer and Freelancer. I have good knowledge of Data Science, Web Development, Web Designing and many other fields.",
+        src: '/images/jigar.jpg',
+        download: '/resume/Jigar.pdf',
+        name: 'Jigar Patel',
+        interest: 'Data Science, AI, ML, IoT, Python Programming',
+        description: "Hey! I'm a Computer Engineer and Freelancer. I have good knowledge of Data Science, IoT and many other fields.",
         //* pd -> personal data
         pd: [
             {
-                Birthday: '21th August, 1998',
+                Birthday: '25th November, 1998',
             },
             {
-                Email: 'harshb669@gmail.com'
+                Email: 'jigarpatel2598@gmail.com'
             },
             {
                 Age: '22 Years'
             },
             {
-                Phone: '+91 7016888790'
+                Phone: '+91 9408096140'
             },
             {
                 Country: 'India',
             },
             {
-                Address: '7, Subhash Nagar, Surat'
+                Address: '204, Sthapatya, Navsari'
             }
         ],
         social_handle: [
             {
                 name: 'fb',
                 icon: <Facebook />,
-                link: 'https://www.facebook.com/harsh.bhatt.39395'
+                link: 'https://www.facebook.com/jigarpatel2598'
             },
             {
                 name: 'tt',
@@ -142,63 +147,13 @@ export const infos = [
             {
                 name: 'ig',
                 icon: <Instagram />,
-                link: 'https://www.instagram.com/harshbhatt2108/'
+                link: 'https://instagram.com/_jigs_2598'
             },
             {
                 name: 'lin',
                 icon: <Linkedin />,
-                link: 'https://www.linkedin.com/in/harsh-bhatt-a2771b161/'
+                link: 'https://www.linkedin.com/in/jigar-patel-ab9a16143/'
             },
         ]
-    },
-    {
-        id: 4,
-        src: '/images/harsh.jpg',
-        name: 'Harsh Bhatt',
-        interest: 'Data Science, UI/UX Designing, Web Development, Python Programming',
-        description: "Hey! I'm a Computer Engineer and Freelancer. I have good knowledge of Data Science, Web Development, Web Designing and many other fields.",
-        //* pd -> personal data
-        pd: [
-            {
-                Birthday: '21th August, 1998',
-            },
-            {
-                Email: 'harshb669@gmail.com'
-            },
-            {
-                Age: '22 Years'
-            },
-            {
-                Phone: '+91 7016888790'
-            },
-            {
-                Country: 'India',
-            },
-            {
-                Address: '7, Subhash Nagar, Surat'
-            }
-        ],
-        social_handle: [
-            {
-                name: 'fb',
-                icon: <Facebook />,
-                link: 'https://www.facebook.com/harsh.bhatt.39395'
-            },
-            {
-                name: 'tt',
-                icon: <Twitter />,
-                link: 'https://twitter.com/harsh_bhatt03'
-            },
-            {
-                name: 'ig',
-                icon: <Instagram />,
-                link: 'https://www.instagram.com/harshbhatt2108/'
-            },
-            {
-                name: 'lin',
-                icon: <Linkedin />,
-                link: 'https://www.linkedin.com/in/harsh-bhatt-a2771b161/'
-            },
-        ]
-    },
+    }
 ];
