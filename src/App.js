@@ -20,9 +20,9 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    let timer1 = setTimeout(() => setLoading(false), 2000);
+    let timer = setTimeout(() => setLoading(false), 2200);
     return () => {
-      clearTimeout(timer1);
+      clearTimeout(timer);
     };
   }, []);
 

@@ -25,7 +25,7 @@ export const our_services = [
     {
         icon: <Database />,
         title: 'Database Management',
-        desc: 'We create attractive and creative design and simply do not reply on orthodox templates. Our goal is to deliver new and fresh design to our clients.'
+        desc: 'Data storing is essential part of any organization. We work with DynamoDB, MongoDB, NoSQL, MySQL, H2 Database and so on.'
     },
     {
         icon: <Wifi />,

@@ -29,10 +29,10 @@ function Footer() {
         <React.Fragment>
             <footer>
                 <div className="footer-wrapper">
-                    <div data-aos="zoom-out" className="logo">The Solvers</div>
+                    <div className="logo">The Solvers</div>
                     <div className="social-links">
                         {social_handle.map((handle, key) => (
-                            <a data-aos="fade-up" key={key} href={handle.link}>
+                            <a key={key} href={handle.link}>
                                 <div className={handle.name}>{handle.icon}</div>
                             </a>
                         ))}

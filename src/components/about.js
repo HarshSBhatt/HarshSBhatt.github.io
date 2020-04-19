@@ -15,7 +15,7 @@ function About() {
                 {infos.map(({ id, src, download, name, interest, description, pd, social_handle }) => (
                     <div className={`info${id % 2}`} key={id}>
                         <div className="image">
-                            <img src={src} height={300} alt="erorr" data-aos='zoom-in' />
+                            <img src={src} height={400} alt="erorr" data-aos='zoom-in' />
                             <a data-aos='fade-up' href={download} download>Download CV</a>
                         </div>
                         <div className="text" data-aos='fade-up'>
