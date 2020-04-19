@@ -12,38 +12,50 @@ section {
 	min-height: 100vh;
 	background-color: white;
 }
-.scrollToTop{
-		position: fixed;
-		bottom: 2%;
-		right: 2%;
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		background-color: $warning-light;
-		color: $warning;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		cursor: pointer;
+.scrollToTop {
+	position: fixed;
+	bottom: 2%;
+	right: 2%;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: $warning-light;
+	color: $warning;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
 }
-.nav-tabs{
+.showTop {
+	animation: showIt 1.5s ease;
+	display: flex;
+}
+.nav-tabs {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 30px;
-	.nav-item{
+	.nav-item {
 		font-family: 'Poppins', sans-serif !important;
 		color: $black !important;
 		font-weight: 600 !important;
 	}
-	.active{
+	.active {
 		color: $warning !important;
 	}
 }
-.tab-content{
+.tab-content {
 	margin: 50px 0 !important;
 }
 @media (max-width: 768px) {
-	section{
-	padding: 3rem 1rem !important;
+	section {
+		padding: 3rem 1rem !important;
+	}
+}
+@keyframes showIt {
+	0% {
+		transform: translateX(30px);
+	}
+	100% {
+		transform: translateX(0);
 	}
 }

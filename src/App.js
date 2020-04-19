@@ -24,7 +24,20 @@ function App() {
     return () => {
       clearTimeout(timer);
     };
+
   }, []);
+
+  const [cls, setCls] = useState('');
+  useEffect(() => {
+    window.addEventListener('scroll', listenScrollEvent)
+  }, [])
+  const listenScrollEvent = () => {
+    if (window.scrollY > 1000) {
+      setCls('showTop')
+    } else {
+      setCls('')
+    }
+  }
 
   const scrollToTop = () => {
     window.scroll(0, 0)
@@ -41,7 +54,7 @@ function App() {
       <GetInTouch />
       <Portfolio />
       <Footer />
-      <div className='scrollToTop' onClick={scrollToTop}><ArrowUp /></div>
+      <div className={`${cls} scrollToTop`} onClick={scrollToTop}><ArrowUp /></div>
     </React.Fragment>
   )
 }
