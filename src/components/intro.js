@@ -9,6 +9,9 @@ function Intro() {
                     <h1>The Solvers</h1>
                     <h3>Group of Freelancers</h3>
                 </div>
+                <div className='img-wrapper'>
+                    <img alt='Not found' src={require('../images/cover.png')} />
+                </div>
             </div>
         </section>
     )

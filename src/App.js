@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 import Navbar from './components/navbar';
 import About from './components/about';
 import Services from './components/services';
-import Portfolio from './components/portfolio';
+// import Portfolio from './components/portfolio';
 import { ArrowUp } from 'react-feather';
 import GetInTouch from './components/getInTouch';
 import Footer from './components/footer';
@@ -50,9 +50,9 @@ function App() {
       <Navbar />
       <Intro />
       <About />
-      <Services />
       <GetInTouch />
-      <Portfolio />
+      <Services />
+      {/* <Portfolio /> */}
       <Footer />
       <div className={`${cls} scrollToTop`} onClick={scrollToTop}><ArrowUp /></div>
     </React.Fragment>
