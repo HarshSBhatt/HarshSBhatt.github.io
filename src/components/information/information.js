@@ -160,9 +160,9 @@ export const infos = [
         id: 4,
         src: '/images/hemil.jpg',
         download: '/resume/Harsh.pdf',
-        name: 'Harsh Bhatt',
+        name: 'Hemil Patel',
         interest: 'Data Science, UI/UX Designing, Web Development, Python Programming',
-        description: "Hey! I'm a Computer Engineer and Freelancer. I have good knowledge of Data Science, Web Development, Web Designing and many other fields.",
+        description: "Hello! I'm a Computer Engineer. I have good knowledge of Web & Mobile app Development, Web Designing and many other fields.",
         //* pd -> personal data
         pd: [
             {

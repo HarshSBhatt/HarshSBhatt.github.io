@@ -10,7 +10,7 @@ function Navbar() {
     }, [])
     const listenScrollEvent = () => {
         if (window.innerWidth >= 800) {
-            if (window.scrollY > 100) {
+            if (window.scrollY > 500) {
                 setCls('fixed')
             } else {
                 setCls('')

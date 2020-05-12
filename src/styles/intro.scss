@@ -28,11 +28,30 @@
       width: 50%;
       h6,
       h1,
-      h3 {
+      h3,
+      .contact {
         color: $black;
-        line-height: 1.2;
+        line-height: 1.35;
         margin: 10px 0;
         letter-spacing: 5px;
+      }
+      .contact {
+        margin: 20px 0 !important;
+        font-size: 15px;
+        cursor: pointer;
+        a {
+          color: $black;
+          text-decoration: none;
+          border: 1px solid $black;
+          border-radius: 5px;
+          padding: 8px;
+          transition: 0.2s all ease-in-out;
+          text-transform: uppercase;
+          &:hover {
+            color: $white;
+            background-color: $black;
+          }
+        }
       }
       h6 {
         font-size: 25px;
@@ -71,6 +90,12 @@
         }
         h3 {
           font-size: 18px;
+        }
+        .contact {
+          a {
+            font-size: 12px;
+            padding: 5px;
+          }
         }
       }
     }
