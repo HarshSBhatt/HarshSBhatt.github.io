@@ -82,7 +82,7 @@ header {
   -moz-box-shadow: 0 3px 5px rgba(32, 33, 36, 0.5);
   box-shadow: 0 3px 5px rgba(32, 33, 36, 0.5);
   position: fixed;
-  background-color: #fcdb77;
+  background-color: $warning;
   border-bottom: none;
   animation: smoothScroll 1s forwards;
   .nav-container {

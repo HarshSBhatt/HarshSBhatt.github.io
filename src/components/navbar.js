@@ -37,6 +37,7 @@ function Navbar() {
                         <li><Link to='home' onClick={handleClick} spy={true} activeClass='active'>Home</Link></li>
                         <li><Link to='about' onClick={handleClick} spy={true} activeClass='active'>About</Link></li>
                         <li><Link to='services' onClick={handleClick} spy={true} activeClass='active'>Services</Link></li>
+                        <li><a href="mailto:harsh.sjs.bhatt@gmail.com?subject=Hey there!">Contact Us</a></li>
                         {/* <li><Link to='portfolio' onClick={handleClick} spy={true} activeClass='active'>Portfolio</Link></li> */}
                     </ul>
                 </div>

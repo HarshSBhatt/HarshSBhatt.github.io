@@ -155,5 +155,56 @@ export const infos = [
                 link: 'https://www.linkedin.com/in/jigar-patel-ab9a16143/'
             },
         ]
+    },
+    {
+        id: 4,
+        src: '/images/hemil.jpg',
+        download: '/resume/Harsh.pdf',
+        name: 'Harsh Bhatt',
+        interest: 'Data Science, UI/UX Designing, Web Development, Python Programming',
+        description: "Hey! I'm a Computer Engineer and Freelancer. I have good knowledge of Data Science, Web Development, Web Designing and many other fields.",
+        //* pd -> personal data
+        pd: [
+            {
+                Birthday: '4th January 1999',
+            },
+            {
+                Email: 'patelhemil077@gmail.com'
+            },
+            {
+                Age: '22 Years'
+            },
+            {
+                Phone: '+91 8200553528'
+            },
+            {
+                Country: 'India',
+            },
+            {
+                Address: '23,Valkeshwar row house, Surat'
+            }
+        ],
+        social_handle: [
+            {
+                name: 'fb',
+                icon: <Facebook />,
+                link: 'https://www.facebook.com/hemil.patel.146069/'
+            },
+            {
+                name: 'tt',
+                icon: <Twitter />,
+                link: 'https://twitter.com/patelhemil077'
+            },
+            {
+                name: 'ig',
+                icon: <Instagram />,
+                link: 'https://www.instagram.com/hemil077/?hl=en'
+            },
+            {
+                name: 'lin',
+                icon: <Linkedin />,
+                link: 'https://www.linkedin.com/in/hemil-patel-798113129/'
+            },
+        ]
     }
 ];
