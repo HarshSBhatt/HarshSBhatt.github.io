@@ -50,8 +50,8 @@ function App() {
       <Intro />
       <Services />
       <Portfolio />
-      <About />
       <GetInTouch />
+      <About />
       <Footer />
       <div className={`${cls} scrollToTop`} onClick={scrollToTop}>
         <ArrowUp />
