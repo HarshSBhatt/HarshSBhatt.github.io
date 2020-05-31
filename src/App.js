@@ -48,10 +48,10 @@ function App() {
     <React.Fragment>
       <Navbar />
       <Intro />
+      <Services />
       <Portfolio />
       <About />
       <GetInTouch />
-      <Services />
       <Footer />
       <div className={`${cls} scrollToTop`} onClick={scrollToTop}>
         <ArrowUp />

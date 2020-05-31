@@ -43,6 +43,16 @@ function Navbar() {
             </li>
             <li>
               <Link
+                to="services"
+                onClick={handleClick}
+                spy={true}
+                activeClass="active"
+              >
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="portfolio"
                 onClick={handleClick}
                 spy={true}
@@ -59,16 +69,6 @@ function Navbar() {
                 activeClass="active"
               >
                 About
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="services"
-                onClick={handleClick}
-                spy={true}
-                activeClass="active"
-              >
-                Services
               </Link>
             </li>
             <li>
