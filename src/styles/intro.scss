@@ -3,6 +3,7 @@
 @import "./variable.scss";
 
 .intro-wrapper {
+  background: #f5f8fd;
   //   background-color: black;
   //   background-image: url('../images/home-background.jpg');
   background-position: center;
@@ -81,7 +82,9 @@
         width: 100%;
       }
       .intro-content {
+        text-align: center;
         padding: 10px;
+        border: none;
         h6 {
           font-size: 15px;
         }

@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import './App.scss';
-import Intro from './components/intro';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import Navbar from './components/navbar';
-import About from './components/about';
-import Services from './components/services';
-// import Portfolio from './components/portfolio';
-import { ArrowUp } from 'react-feather';
-import GetInTouch from './components/getInTouch';
-import Footer from './components/footer';
-import Loading from './components/loading';
+import React, { useState, useEffect } from "react";
+import "./App.scss";
+import Intro from "./components/intro";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import Navbar from "./components/navbar";
+import About from "./components/about";
+import Services from "./components/services";
+import Portfolio from "./components/portfolio";
+import { ArrowUp } from "react-feather";
+import GetInTouch from "./components/getInTouch";
+import Footer from "./components/footer";
+import Loading from "./components/loading";
 
 function App() {
   useEffect(() => {
@@ -24,23 +24,22 @@ function App() {
     return () => {
       clearTimeout(timer);
     };
-
   }, []);
 
-  const [cls, setCls] = useState('');
+  const [cls, setCls] = useState("");
   useEffect(() => {
-    window.addEventListener('scroll', listenScrollEvent)
-  }, [])
+    window.addEventListener("scroll", listenScrollEvent);
+  }, []);
   const listenScrollEvent = () => {
     if (window.scrollY > 1000) {
-      setCls('showTop')
+      setCls("showTop");
     } else {
-      setCls('')
+      setCls("");
     }
-  }
+  };
 
   const scrollToTop = () => {
-    window.scroll(0, 0)
+    window.scroll(0, 0);
   };
 
   if (loading) return <Loading />;
@@ -49,14 +48,16 @@ function App() {
     <React.Fragment>
       <Navbar />
       <Intro />
+      <Portfolio />
       <About />
       <GetInTouch />
       <Services />
-      {/* <Portfolio /> */}
       <Footer />
-      <div className={`${cls} scrollToTop`} onClick={scrollToTop}><ArrowUp /></div>
+      <div className={`${cls} scrollToTop`} onClick={scrollToTop}>
+        <ArrowUp />
+      </div>
     </React.Fragment>
-  )
+  );
 }
 
 export default App;
