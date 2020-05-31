@@ -10,7 +10,7 @@ export const works = [
     target: ["all", "webapp"],
   },
   {
-    img: "/portfolio/agv.jpg",
+    img: "/portfolio/agv.JPG",
     title: "AGV",
     target: ["all", "ai"],
   },
@@ -21,7 +21,7 @@ export const works = [
     target: ["all", "ai"],
   },
   {
-    img: "/portfolio/midas.jpg",
+    img: "/portfolio/midas.JPG",
     title: "Microwave Data Analysis Software",
     target: ["all", "ai"],
   },
@@ -41,7 +41,7 @@ export const works = [
     target: ["all", "ai"],
   },
   {
-    img: "/portfolio/spellchecker.jpg",
+    img: "/portfolio/spellchecker.JPG",
     title: "SpellInspector plugin in Figma",
     target: ["all", "webapp"],
   },
