@@ -114,7 +114,7 @@ export const infos = [
     name: "Jigar Patel",
     interest: "Data Science, AI, ML, IoT, Python Programming",
     description:
-      "Hey! I'm a Computer Engineer and Freelancer. I have good knowledge of Data Science, IoT and many other fields.",
+      "I'm a Computer Engineer keen in various fields such as Data Analysis, IoT, AI/ML and Model Training.",
     //* pd -> personal data
     pd: [
       {
@@ -167,7 +167,7 @@ export const infos = [
     interest:
       "Data Science, UI/UX Designing, Web Development, Python Programming",
     description:
-      "Hello! I'm a Computer Engineer. I have good knowledge of Web & Mobile app Development, Web Designing and many other fields.",
+      "I'm an App Developer having exceptional knowledge in Mobile and Web Technologies and its different frameworks.",
     //* pd -> personal data
     pd: [
       {

@@ -62,7 +62,7 @@ export const works = [
   },
   {
     img: "/portfolio/visualization.jpg",
-    title: "Sorting Visualization",
+    title: "Sorting Algorithms for Large files",
     target: ["all", "webapp", "ai"],
   },
   {
