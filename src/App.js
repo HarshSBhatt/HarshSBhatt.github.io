@@ -3,6 +3,7 @@ import "./App.scss";
 import Intro from "./components/intro";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import ReactGA from "react-ga";
 import Navbar from "./components/navbar";
 import About from "./components/about";
 import Services from "./components/services";
@@ -13,6 +14,12 @@ import Footer from "./components/footer";
 import Loading from "./components/loading";
 
 function App() {
+  useEffect(() => {
+    window.scroll(0, 0);
+    ReactGA.initialize("UA-168265252-1");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   useEffect(() => {
     Aos.init({ duration: 1200 });
   }, []);
