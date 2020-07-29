@@ -403,7 +403,7 @@ export const infos = [
 	},
 	{
 		id: 9,
-		src: '/images/borad.jpg',
+		src: '/images/jigar_borad.jpg',
 		download: '/resume/Jigar_Borad.pdf',
 		name: 'Jigar Borad',
 		interest: 'Artificial Intelligence, Internet of things, Data Science, Python Programming',
