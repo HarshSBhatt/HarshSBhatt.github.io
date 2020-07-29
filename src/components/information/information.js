@@ -305,7 +305,7 @@ export const infos = [
 	},
 	{
 		id: 7,
-		src: '/images/harsh.jpg',
+		src: '/images/parthiv.jpeg',
 		download: '/resume/Parthiv.pdf',
 		name: 'Parthiv Akbari',
 		interest: 'Blockchain, Internet Of Things, Python Programming',
@@ -398,6 +398,53 @@ export const infos = [
 				name: 'lin',
 				icon: <Linkedin />,
 				link: 'https://www.linkedin.com/in/ag646/'
+			}
+		]
+	},
+	{
+		id: 9,
+		src: '/images/borad.jpg',
+		download: '/resume/Jigar_Borad.pdf',
+		name: 'Jigar Borad',
+		interest: 'Artificial Intelligence, Internet of things, Data Science, Python Programming',
+		description:
+			'Hey! folks, keen interest in Programming. I always try to add intelligence in things and try to make existing machine learning models more better.',
+		//* pd -> personal data
+		pd: [
+			{
+				Birthday: '14th March, 1999'
+			},
+			{
+				Email: 'borad.jigar.944@outlook.com'
+			},
+			{
+				Age: '21 Years'
+			},
+			{
+				Phone: '+91 9978670576'
+			},
+			{
+				Country: 'India'
+			},
+			{
+				Address: 'Rang avdhut society,station road, Sachin, Surat'
+			}
+		],
+		social_handle: [
+			{
+				name: 'tt',
+				icon: <Twitter />,
+				link: 'https://twitter.com/JigarBorad2'
+			},
+			{
+				name: 'ig',
+				icon: <Instagram />,
+				link: 'https://www.instagram.com/borad_944/'
+			},
+			{
+				name: 'lin',
+				icon: <Linkedin />,
+				link: 'https://www.linkedin.com/in/jigar-borad-0aa351159/'
 			}
 		]
 	}
